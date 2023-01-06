@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js.js"></script>
+    <style>
+        .image {
+            display: inline-block;
+            vertical-align: middle;
+            justify-content: end;
+            max-width:  300px;
+            max-height: 300px;
+        }
+        span {
+            margin-left: 2px;
+        }
+        .list {
+            gap:30%;
+            display: flex;
+        }
+        li{
+            cursor: pointer;
+        }
+        #cardArea, #planets{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            
+        }
+        .card {
+            background-color:rgb(124, 146, 151);
+            border-radius: 15px;
+            width: 350px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+        .container {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 30% 65%;
+            vertical-align: middle;
+            grid-row-gap: 20px;
+        }
+        .input {
+            display: inline-block;
+            background-color: white;
+            border-radius: 6px;
+            padding: 5px;
+            overflow: hidden;
+        }
+        
+        .before {
+            padding: 5px;
+            color: white;
+        }
+        .sort{
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <div class="ul">
+            <ul>
+
+            </ul>
+        </div>
+        <div class="image">
+        </div>
+    </div>
+    <div id="cardArea">
+
+    </div>
+    <div class="sort">
+        <button id="scale">Sort by scale</button>
+        <button id="population">Sort by population</button>
+    </div>
+    <div id="planets"></div>
+</body>
+</html>
